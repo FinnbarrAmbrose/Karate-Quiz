@@ -1,34 +1,26 @@
-/* General Styles */
-body {
-    background-color: #b1abab;
-    display:flexbox;
-    justify-content: center;
-    align-items: center;
-    }
-
-h1 {
-    font-size: 2em;
-    color: #333;
-}
 
 #title {
-    text-align: center;
-    margin-bottom: 20px;
+    display:inline-flexbox;
+    margin-bottom: 30px;
+    background-image: url("https://images.pexels.com/photos/6253307/pexels-photo-6253307.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width:500px;
+    max-width: 100%;
+    
 }
 
-label {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    display: block;
-    color: #0a0707;
+h1 {
+    font: size 100px;
+    color:blue;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
 }
 
-#belt-select {
-    font-size: 1em;
-    padding: 5px;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    color: #000000;
+#title h1:hover {
+    transform: scale(1.5);   
 }
