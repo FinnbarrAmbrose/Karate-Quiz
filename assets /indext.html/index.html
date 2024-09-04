@@ -12,24 +12,29 @@
         <h1>Karate Kata Quiz</h1>
     </div>
     <div id="bob">
-    <label for="belt-select">Choose your belt:</label>
-     <select id="belt-select">
-            <option value="white">White Belt</option>
-            <option value="yellow">Yellow Belt</option>
-            <option value="green">Green Belt</option>
-            <option value="blue">Blue Belt</option>
-            <option value="brown">Brown Belt</option>
-            <option value="black">Black Belt</option>
-        </select>
-      <div id="start-quiz">
-        <button id="start-quiz">Start Quiz</button>
-      </div>
-        <div id="Anssewr and Submit">
-            <input type="" id="" placeholder="">
-            <button>Submit</button>
-        </div>
-    <div id="Restart" >
-    <button>Restart Quiz</button>
+        <div class="container">
+            <label for="belt-select">Choose your belt:</label>
+            <select id="belt-select">
+                <option value="" disabled selected>Select your belt</option>
+                <option value="white">White Belt</option>
+                <option value="yellow">Yellow Belt</option>
+                <option value="green">Green Belt</option>
+                <option value="blue">Blue Belt</option>
+                <option value="brown">Brown Belt</option>
+                <option value="black">Black Belt</option>
+            </select>
+        
+            <button id="start-quiz">Start Quiz</button>
+        
+            <div class="quiz-container" id="quiz-container">
+                <input type="text" id="answer-input" placeholder="Enter your answer">
+                <button id="submit-button">Submit</button>
+            </div>
+        
+            <div id="result-container"></div>
+        
+            <button id="restart-quiz">Restart Quiz</button>
+    
 </div>
 </div>
     <script src="assets /css/js/script.js"></script>
