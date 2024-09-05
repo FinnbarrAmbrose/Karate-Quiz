@@ -46,7 +46,7 @@ label {
 }
 
 #belt-select, #answer-input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
