@@ -10,6 +10,7 @@ body {
     background: url('https://images.pexels.com/photos/6253307/pexels-photo-6253307.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat #f4f4f4;
 }
 
+
 #title {
     background-color:#fff;
     color: #000;
@@ -67,4 +68,10 @@ button {
 .quiz-container {
     display: none; 
     margin-top: 20px;
+}
+
+.footer-text {
+    background-color: #6b1212;
+    padding: 20px;
+    text-align: center;
 }
