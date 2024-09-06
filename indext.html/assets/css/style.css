@@ -28,9 +28,9 @@ body {
 
     
 }
-<style>
+
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
-</style>
+
 @font-face {
     font-family: 'title'; 
     src: url('fonts/karate.ttf') format('truetype');

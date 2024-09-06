@@ -11,6 +11,7 @@ const resultContainer =document.getElementById('result-container');
 startQuizButton.addEventListener('click', function() {
     mainContainer.style.display = 'none';  
     quizContainer.style.display = 'block';
+    
 });
 
 
@@ -35,9 +36,23 @@ startQuizButton.addEventListener('click', function() {
         mainContainer.style.display = 'none';  
         quizContainer.style.display = 'block'; 
         showQuestion();
-    } else {
-        alert('select a belt to start the your traning.');
+   
     }
+    const selectedBelt = beltSelect.value;
+    if (selectedBelt === 'white') {
+        currentBeltQuestions = karateQuestions.whiteBelt;
+    } else if (selectedBelt === 'yellow') {
+        currentBeltQuestions = karateQuestions.yellowBelt;
+    } else if (selectedBelt === 'green') {
+        currentBeltQuestions = karateQuestions.greenBelt;
+    } else if (selectedBelt === 'blue') {
+        currentBeltQuestions = karateQuestions.blueBelt;
+    } else if (selectedBelt === 'brown') {
+        currentBeltQuestions = karateQuestions.brownBelt;
+    } else if (selectedBelt === 'black') {
+        currentBeltQuestions = karateQuestions.blackBelt;
+    }  else {
+        alert('select a belt to start the your traning.');
 });
 
 submitButton.addEventListener('click', function() {
