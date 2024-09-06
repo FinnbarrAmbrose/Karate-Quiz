@@ -8,7 +8,10 @@ body {
     height: 100vh;
     flex-direction: column;
     background: url('https://images.pexels.com/photos/6253307/pexels-photo-6253307.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat #f4f4f4;
-}
+        font-family: "Nanum Pen Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
 
 
 #title {
@@ -21,12 +24,22 @@ body {
     border-radius: 20px;
     width: 80%;
     padding: 10px;
+    border-color: #000
+
     
 }
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+</style>
+@font-face {
+    font-family: 'title'; 
+    src: url('fonts/karate.ttf') format('truetype');
+  }
 
-#title h1 {
-    font-size: 2.5em;
-    color: #333;
+#title h1 {   
+        font-family: "Nanum Pen Script", cursive;
+        font-weight: 400;
+        font-style: normal
 }
 
 .container, .quiz-container {
@@ -70,8 +83,9 @@ button {
     margin-top: 20px;
 }
 
-.footer-text {
+footer div .footer-text #footer-text {
     background-color: #6b1212;
     padding: 20px;
     text-align: center;
+/*how do i make this footer a diffrent color*/
 }
