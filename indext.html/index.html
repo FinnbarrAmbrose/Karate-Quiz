@@ -27,12 +27,20 @@
             <option value="brown">Brown Belt</option>
             <option value="black">Black Belt</option>
         </select>
+        
 
         <button id="start-quiz">Start Quiz</button>
     </div>
 
-    <div class="quiz-container" id="quiz-container">
-        <input type="text" id="answer-input" placeholder="Enter your answer">
+    <div class="quiz-container" id="quiz-container" style="display: flexbox;">
+        <div id="options-container">
+        
+          <label><input type="radio" name="option" value="A"> <span id="optionA">Option A</span></label><br>
+          <label><input type="radio" name="option" value="B"> <span id="optionB">Option B</span></label><br>
+          <label><input type="radio" name="option" value="C"> <span id="optionC">Option C</span></label><br>
+          <label><input type="radio" name="option" value="D"> <span id="optionD">Option D</span></label><br>
+      </div>
+      <input type="button" id="submit-button" value="Submit Answer" />
         <button id="submit-button">Submit</button>
 
         <button id="restart-quiz">Restart Quiz</button>
