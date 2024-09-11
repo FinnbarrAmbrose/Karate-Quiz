@@ -191,22 +191,21 @@
             showQuestion();
         });
 
-        // Submit answer event listener
+        
         submitButton.addEventListener('click', function () {
             if (!selectedAnswer) {
                 alert("Please select an answer!");
                 return;
             }
-            const correctAnswer = currentBeltQuestions[currentQuestionIndex].answer;
+            const correctAnswer = currentBeltQuestions[currentQuestionIndex].options.find(option => option.charAt(0) === currentBeltQuestions[currentQuestionIndex].answer);
 
-            // Check if the answer is correct
+            
             if (selectedAnswer === correctAnswer) {
                 score++;
             }
 
             currentQuestionIndex++;
 
-            // Show next question or result
             if (currentQuestionIndex < currentBeltQuestions.length) {
                 showQuestion();
             } else {
@@ -231,8 +230,9 @@
 
             // Generate the options
             currentQuestion.options.forEach((option, index) => {
+                const optionLetter = String.fromCharCode(65 + index);
                 const li = document.createElement('li');
-                li.innerHTML = `<label><input type="radio" name="option" value="${option.charAt(0)}"> ${option}</label>`;
+                li.innerHTML = `<label><input type="radio" name="option" value="${optionLetter}>`;
                 optionsElement.appendChild(li);
             });
 
