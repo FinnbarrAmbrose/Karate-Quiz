@@ -18,7 +18,7 @@
             },
             {
                 question: "How do you perform a front kick (Mae Geri) in Shotokan?",
-                options: ["Strike with your heel", "Raise your knee and extend your foot forward, striking with the ball of the foot", "Kick backward", "Swing your leg to the side"],
+                options: ["Strike with your heel", "Raise your knee and extend your foot forward", "striking with the ball of the foot", "Swing your leg to the side"],
                 answer: "Raise your knee and extend your foot forward"
             }
         ];
