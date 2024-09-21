@@ -3,23 +3,23 @@
         const whiteBeltQuestions = [
             {
                 question: "What is the name of the front stance in Shotokan Karate?",
-                options: ["A) Kiba Dachi", "B) Zenkutsu Dachi", "C) Kokutsu Dachi", "D) Neko Ashi Dachi"],
-                answer: "B"
+                options: ["Kiba Dachi", "Zenkutsu Dachi", "Kokutsu Dachi", "Neko Ashi Dachi"],
+                answer: "Zenkutsu Dachi"
             },
             {
                 question: "How do you execute a basic middle punch in Shotokan?",
-                options: ["A) Extend your arm while standing still", "B) Rotate your hips and extend your arm forward with a twist", "C) Jump and punch", "D) Kick and punch"],
-                answer: "B"
+                options: ["Extend your arm while standing still", "Rotate your hips and extend your arm forward with a twist", "Jump and punch","Kick and punch"],
+                answer: "Rotate your hips and extend your arm forward with a twist"
             },
             {
                 question: "What is the purpose of Gedan Barai (downward block) in Shotokan?",
-                options: ["A) To block high attacks", "B) To block attacks aimed at the lower body", "C) To strike the opponent", "D) To evade an attack"],
-                answer: "B"
+                options: ["To block high attacks", "To block attacks aimed at the lower body", "To strike the opponent", "To evade an attack"],
+                answer: "To block attacks aimed at the lower body"
             },
             {
                 question: "How do you perform a front kick (Mae Geri) in Shotokan?",
-                options: ["A) Strike with your heel", "B) Raise your knee and extend your foot forward, striking with the ball of the foot", "C) Kick backward", "D) Swing your leg to the side"],
-                answer: "B"
+                options: ["Strike with your heel", "Raise your knee and extend your foot forward, striking with the ball of the foot", "Kick backward", "Swing your leg to the side"],
+                answer: "Raise your knee and extend your foot forward"
             }
         ];
 
@@ -27,23 +27,23 @@
         const yellowBeltQuestions = [
             {
                 question: "What is the first move in the kata Heian Shodan?",
-                options: ["A) A punch", "B) A downward block (Gedan Barai)", "C) A side kick", "D) A front kick"],
-                answer: "B"
+                options: ["A punch", "A downward block (Gedan Barai)", "A side kick", "A front kick"],
+                answer: "A downward block (Gedan Barai)"
             },
             {
                 question: "How do you perform an upper block (Jodan Uke)?",
-                options: ["A) Raise your arm to the side", "B) Raise your arm above your head with palm facing outward", "C) Keep your arm down", "D) Jump and block"],
-                answer: "B"
+                options: ["Raise your arm to the side", "Raise your arm above your head with palm facing outward", "Keep your arm down", "Jump and block"],
+                answer: "Raise your arm above your head with palm facing outward"
             },
             {
                 question: "What is the purpose of a side kick (Yoko Geri) in Shotokan?",
-                options: ["A) To strike an opponent from the front", "B) To strike an opponent from the side", "C) To block attacks", "D) To evade"],
-                answer: "B"
+                options: ["To strike an opponent from the front", "To strike an opponent from the side", "To block attacks", "To evade"],
+                answer: "To strike an opponent from the side"
             },
             {
                 question: "How do you change from a front stance (Zenkutsu Dachi) to a back stance (Kokutsu Dachi)?",
-                options: ["A) Jump", "B) Shift your weight back and turn your front foot sideways", "C) Keep your legs straight", "D) Spin around"],
-                answer: "B"
+                options: ["Jump", "Shift your weight back and turn your front foot sideways", "Keep your legs straight", "Spin around"],
+                answer: "Shift your weight back and turn your front foot sideways"
             }
         ];
 
@@ -51,23 +51,23 @@
         const greenBeltQuestions = [
             {
                 question: "In Heian Nidan, what does the low block (Gedan Barai) teach you?",
-                options: ["A) Defense against high attacks", "B) Defense against low attacks", "C) How to kick", "D) How to punch"],
-                answer: "B"
+                options: ["Defense against high attacks", "Defense against low attacks", "How to kick", "How to punch"],
+                answer: "Defense against low attacks"
             },
             {
                 question: "How do you perform an outside block (Soto Uke)?",
-                options: ["A) Extend your arm outward with palm facing inward", "B) Extend your arm outward with palm facing away", "C) Swing your arm backward", "D) Raise your hand above your head"],
-                answer: "B"
+                options: ["Extend your arm outward with palm facing inward", "Extend your arm outward with palm facing away", "Swing your arm backward", "Raise your hand above your head"],
+                answer: "Extend your arm outward with palm facing away"
             },
             {
                 question: "What is a knife hand block (Shuto Uke)?",
-                options: ["A) A fist punch", "B) A block using the side of your hand", "C) A low kick", "D) A jump"],
-                answer: "B"
+                options: ["A fist punch", "A block using the side of your hand", "A low kick", "A jump"],
+                answer: "A block using the side of your hand"
             },
             {
                 question: "How do you keep your balance when performing a front kick?",
-                options: ["A) Lean back", "B) Focus on your supporting leg and engage your core", "C) Close your eyes", "D) Jump before kicking"],
-                answer: "B"
+                options: ["Lean back", "Focus on your supporting leg and engage your core", "Close your eyes", "Jump before kicking"],
+                answer: "Focus on your supporting leg and engage your core"
             }
         ];
 
@@ -75,23 +75,23 @@
         const blueBeltQuestions = [
             {
                 question: "What is the focus of the kata Heian Sandan?",
-                options: ["A) Emphasizing jumping techniques", "B) Balance, transitions, and combination techniques", "C) Only blocking techniques", "D) Only kicking techniques"],
-                answer: "B"
+                options: ["Emphasizing jumping techniques", "Balance, transitions, and combination techniques", "Only blocking techniques", "Only kicking techniques"],
+                answer: "Balance, transitions, and combination techniques"
             },
             {
                 question: "How do you perform a back kick (Ushiro Geri) correctly?",
-                options: ["A) Turn your body and kick straight back", "B) Lift your knee and kick upward", "C) Kick sideways", "D) Jump then kick"],
-                answer: "A"
+                options: ["Turn your body and kick straight back", "Lift your knee and kick upward", "Kick sideways", "Jump then kick"],
+                answer: "Lift your knee and kick upward"
             },
             {
                 question: "How do you block a punch with an upper block and counterattack?",
-                options: ["A) Perform the upper block and then run away", "B) Perform the upper block and immediately follow with a punch", "C) Ignore the punch", "D) Jump and punch"],
-                answer: "B"
+                options: ["Perform the upper block and then run away", "Perform the upper block and immediately follow with a punch", "Ignore the punch", "Jump and punch"],
+                answer: "Perform the upper block and immediately follow with a punch"
             },
             {
                 question: "What is the key to generating power in a reverse punch (Gyaku-zuki)?",
-                options: ["A) Just using your arm", "B) Rotating your hips and shoulders while driving from your back leg", "C) Punching faster", "D) Kicking first"],
-                answer: "B"
+                options: ["Just using your arm", "Rotating your hips and shoulders while driving from your back leg", "Punching faster", "Kicking first"],
+                answer: "Rotating your hips and shoulders while driving from your back leg"
             }
         ];
 
@@ -99,23 +99,23 @@
         const brownBeltQuestions = [
             {
                 question: "What are the main stances in Shotokan Karate and how are they used?",
-                options: ["A) They are all the same", "B) They help with mobility and balance", "C) They are only for show", "D) They are used for dancing"],
-                answer: "B"
+                options: ["They are all the same", "They help with mobility and balance", "They are only for show", "They are used for dancing"],
+                answer: "They help with mobility and balance"
             },
             {
                 question: "How do you perform a Hidari Mae Geri (left front kick)?",
-                options: ["A) Chamber your left leg and extend it forward", "B) Kick backward", "C) Kick to the side", "D) Jump and kick"],
-                answer: "A"
+                options: ["Chamber your left leg and extend it forward", "Kick backward", "Kick to the side", "Jump and kick"],
+                answer: "Chamber your left leg and extend it forward"
             },
             {
                 question: "What is the sequence of movements in Heian Yondan?",
-                options: ["A) It includes only kicks", "B) It includes various blocks and punches", "C) It is a dance", "D) It only includes jumps"],
-                answer: "B"
+                options: ["It includes only kicks", "It includes various blocks and punches", "It is a dance", "It only includes jumps"],
+                answer: "It includes various blocks and punches"
             },
             {
                 question: "How do you combine a block and a punch in a single movement?",
-                options: ["A) Do them separately", "B) Execute a block while delivering a punch with the other hand", "C) Use both hands to block", "D) Kick and punch together"],
-                answer: "B"
+                options: ["Do them separately", "Execute a block while delivering a punch with the other hand", "Use both hands to block", "Kick and punch together"],
+                answer: "Execute a block while delivering a punch with the other hand"
             }
         ];
 
@@ -123,143 +123,144 @@
         const blackBeltQuestions = [
             {
                 question: "How does Kata reflect the principles of self-defense in Shotokan?",
-                options: ["A) It teaches only how to attack", "B) It incorporates both defensive and offensive movements", "C) It is just a workout", "D) It teaches meditation"],
-                answer: "B"
+                options: ["It teaches only how to attack", "It incorporates both defensive and offensive movements", "It is just a workout", "It teaches meditation"],
+                answer: "It incorporates both defensive and offensive movements"
             },
             {
                 question: "In Kanku Dai, what are the key techniques and their applications?",
-                options: ["A) It focuses on punching only", "B) It includes blocks, strikes, and stances that demonstrate adaptability", "C) It is a warm-up exercise", "D) It is about stretching"],
-                answer: "B"
+                options: ["It focuses on punching only", "It includes blocks, strikes, and stances that demonstrate adaptability", "It is a warm-up exercise", "It is about stretching"],
+                answer: "It includes blocks, strikes, and stances that demonstrate adaptability"
             },
             {
                 question: "How do you analyze your opponent’s movements in sparring?",
-                options: ["A) Ignore them", "B) Observe their stance, rhythm, and patterns", "C) Just go for a punch", "D) Just kick them"],
-                answer: "B"
+                options: ["Ignore them", "Observe their stance, rhythm, and patterns", "Just go for a punch", "Just kick them"],
+                answer: "Observe their stance, rhythm, and patterns"
             },
             {
                 question: "What is the importance of breathing in advanced Shotokan techniques?",
-                options: ["A) It’s not important", "B) Proper breathing increases power and control in techniques", "C) It is only for meditation", "D) You should hold your breath"],
-                answer: "B"
+                options: ["It’s not important", "Proper breathing increases power and control in techniques", "It is only for meditation", "You should hold your breath"],
+                answer: "Proper breathing increases power and control in techniques"
             }
         ];
 
-        // Grabbing necessary elements
-        const startQuizButton = document.getElementById('start-quiz');
-        const mainContainer = document.getElementById('main-container');
-        const quizContainer = document.getElementById('quiz-container');
-        const restartQuizButton = document.getElementById('restart-quiz');
-        const beltSelect = document.getElementById('belt-select');
-        const questionElement = document.getElementById('question');
-        const optionsElement = document.getElementById('options');
-        const submitButton = document.getElementById('submit-button');
-        const resultContainer = document.getElementById('result-container');
+        // Grab elements from the DOM
+const startQuizButton = document.getElementById('start-quiz');
+const mainContainer = document.getElementById('main-container');
+const quizContainer = document.getElementById('quiz-container');
+const restartQuizButton = document.getElementById('restart-quiz');
+const beltSelect = document.getElementById('belt-select');
+const questionElement = document.getElementById('question');
+const optionsElement = document.getElementById('options-container');
+const submitButton = document.getElementById('submit-button');
+const resultContainer = document.getElementById('result-container');
 
-        // Variables for quiz state management
-        let currentQuestionIndex = 0;
-        let score = 0;
-        let currentBeltQuestions = [];
-        let selectedAnswer = "";
+// Variables for quiz state management
+let currentQuestionIndex = 0;
+let score = 0;
+let currentBeltQuestions = [];
+let selectedAnswer = "";
 
-        // Start quiz event listener
-        startQuizButton.addEventListener('click', function () {
-            const selectedBelt = beltSelect.value;
+// Function to load a question
+function loadQuestion() {
+    const currentQuestion = currentBeltQuestions[currentQuestionIndex];
+    questionElement.innerText = currentQuestion.question;
 
-            // Ensure a belt is selected
-            if (!selectedBelt) {
-                alert('Please select a belt to start the quiz.');
-                return;
-            }
+    // Clear previous options
+    optionsElement.innerHTML = "";
 
-            // Set questions based on belt selection
-            if (selectedBelt === 'white') {
-                currentBeltQuestions = whiteBeltQuestions;
-            } else if (selectedBelt === 'yellow') {
-                currentBeltQuestions = yellowBeltQuestions;
-            } else if (selectedBelt === 'green') {
-                currentBeltQuestions = greenBeltQuestions;
-            } else if (selectedBelt === 'blue') {
-                currentBeltQuestions = blueBeltQuestions;
-            } else if (selectedBelt === 'brown') {
-                currentBeltQuestions = brownBeltQuestions;
-            } else if (selectedBelt === 'black') {
-                currentBeltQuestions = blackBeltQuestions;
-            }
+    // Generate the options dynamically for each question
+    currentQuestion.options.forEach(option => {
+        const label = document.createElement('label');
+        label.innerHTML = `<input type="radio" name="option" value="${option}"> ${option}`;
+        optionsElement.appendChild(label);
+        optionsElement.appendChild(document.createElement('br'));
+    });
 
-            resetQuiz();
-            mainContainer.style.display = 'none';
-            quizContainer.style.display = 'block';
-            showQuestion();
+    // Reset selectedAnswer
+    selectedAnswer = "";
+
+    // Add event listeners to update selectedAnswer when the user selects an option
+    document.querySelectorAll('input[name="option"]').forEach(option => {
+        option.addEventListener('change', function () {
+            selectedAnswer = this.value;
         });
+    });
+}
 
-        
-        submitButton.addEventListener('click', function () {
-            if (!selectedAnswer) {
-                alert("Please select an answer!");
-                return;
-            }
-            const correctAnswer = currentBeltQuestions[currentQuestionIndex].options.find(option => option.charAt(0) === currentBeltQuestions[currentQuestionIndex].answer);
+// Start quiz event listener
+startQuizButton.addEventListener('click', function () {
+    const selectedBelt = beltSelect.value;
 
-            
-            if (selectedAnswer === correctAnswer) {
-                score++;
-            }
+    // Ensure a belt is selected
+    if (!selectedBelt) {
+        alert('Please select a belt to start the quiz.');
+        return;
+    }
 
-            currentQuestionIndex++;
+  // Set questions based on belt selection
+  if (selectedBelt === 'white') {
+    currentBeltQuestions = whiteBeltQuestions;
+} else if (selectedBelt === 'yellow') {
+    currentBeltQuestions = yellowBeltQuestions;
+} else if (selectedBelt === 'green') {
+    currentBeltQuestions = greenBeltQuestions;
+} else if (selectedBelt === 'blue') {
+    currentBeltQuestions = blueBeltQuestions;
+} else if (selectedBelt === 'brown') {
+    currentBeltQuestions = brownBeltQuestions;
+} else if (selectedBelt === 'black') {
+    currentBeltQuestions = blackBeltQuestions;
+}
+    mainContainer.style.display = 'none'; // Hide main container
+    quizContainer.style.display = 'block'; // Show quiz container
+    loadQuestion();
+});
 
-            if (currentQuestionIndex < currentBeltQuestions.length) {
-                showQuestion();
-            } else {
-                showResult();
-            }
-        });
+// Submit button event listener
+submitButton.addEventListener('click', function () {
+    if (!selectedAnswer) {
+        alert("Please select an answer!");
+        return;
+    }
+    const correctAnswer = currentBeltQuestions[currentQuestionIndex].answer;
 
-        // Restart quiz event listener
-        restartQuizButton.addEventListener('click', function () {
-            resetQuiz();
-            mainContainer.style.display = 'block';
-            quizContainer.style.display = 'none';
-        });
+    // Check if the selected answer is correct
+    if (selectedAnswer === correctAnswer) {
+        score++;
+    }
 
-        // Function to display the current question and options
-        function showQuestion() {
-            const currentQuestion = currentBeltQuestions[currentQuestionIndex];
-            questionElement.textContent = currentQuestion.question;
+    currentQuestionIndex++;
 
-            // Clear previous options
-            optionsElement.innerHTML = "";
+    // If there are more questions, load the next question
+    if (currentQuestionIndex < currentBeltQuestions.length) {
+        loadQuestion();
+    } else {
+        // No more questions, show the result
+        showResult();
+    }
+});
 
-            // Generate the options
-            currentQuestion.options.forEach((option, index) => {
-                const optionLetter = String.fromCharCode(65 + index);
-                const li = document.createElement('li');
-                li.innerHTML = `<label><input type="radio" name="option" value="${optionLetter}>`;
-                optionsElement.appendChild(li);
-            });
+// Restart quiz event listener
+restartQuizButton.addEventListener('click', function () {
+    resetQuiz();
+    mainContainer.style.display = 'block'; // Show main container
+    quizContainer.style.display = 'none'; // Hide quiz container
+});
 
-            // Reset selectedAnswer
-            selectedAnswer = "";
+// Function to show the final score after the quiz
+function showResult() {
+    resultContainer.innerHTML = `<p>Quiz finished! Your score: ${score}/${currentBeltQuestions.length}</p>`;
+    submitButton.style.display = 'none'; // Hide submit button after quiz ends
+    restartQuizButton.style.display = 'inline-block'; // Show restart button
+}
 
-            // Add event listeners to update selectedAnswer when the user selects an option
-            document.querySelectorAll('input[name="option"]').forEach(option => {
-                option.addEventListener('change', function () {
-                    selectedAnswer = this.value;
-                });
-            });
-        }
+// Function to reset the quiz to the initial state
+function resetQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    selectedAnswer = "";
+    submitButton.style.display = 'inline-block'; // Show submit button
+    resultContainer.innerText = ''; // Clear result text
+}
 
-        // Function to show final score after quiz
-        function showResult() {
-            resultContainer.innerHTML = `<p>Quiz finished! Your score: ${score}/${currentBeltQuestions.length}</p>`;
-            submitButton.style.display = 'none'; // Hide submit button after quiz ends
-            restartQuizButton.style.display = 'inline-block'; // Show restart button
-        }
-
-        // Reset quiz to initial state
-        function resetQuiz() {
-            currentQuestionIndex = 0;
-            score = 0;
-            selectedAnswer = "";
-            submitButton.style.display = 'inline-block'; // Show submit button
-            resultContainer.textContent = ''; // Clear result text
-            restartQuizButton.style.display = 'none'; // Hide restart button
-        }
+         
