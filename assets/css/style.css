@@ -11,8 +11,6 @@ body {
     flex-direction: column;
     background: url('https://images.pexels.com/photos/6253307/pexels-photo-6253307.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat #f4f4f4;
         font-family: "Nanum Pen Script", cursive;
-        font-weight: 400;
-        font-style: normal;
         font-size: 20px;
       }
 
@@ -25,12 +23,11 @@ body {
     justify-content:center;
     align-items: center;
     border-radius: 10px;
-    width: 80%;
     padding: 5px;
     border-color: #000;
     border-width: 2px;
     text-align: center;
-     transform: translate(-50%, -50%);
+    
 
     
 }
@@ -55,8 +52,8 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    width: 80%;
-    max-width: 600px;
+    
+    max-width: 800px;
     margin: 0 auto; 
     text-align: center;
 }
