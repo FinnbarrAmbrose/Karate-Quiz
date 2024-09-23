@@ -25,7 +25,7 @@ body {
     border-radius: 10px;
     padding: 5px;
     border-color: #000;
-    border-width: 2px;
+    border-width: 12px;
     text-align: center;
     
 
@@ -88,10 +88,18 @@ button {
     display: none; 
     margin-top: 20px;
 }
-
+footer {
+    background-color:#fff;
+    color: #000;
+    margin-top: 20px;
+    justify-content:last baseline;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
 footer div .footer-text #footer-text {
     background-color: #6b1212;
     padding: 20px;
     text-align: center;
-/*how do i make this footer a diffrent color*/
 }
