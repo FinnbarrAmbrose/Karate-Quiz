@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,30 +22,33 @@ body {
     color: #000;
     margin-bottom: 20px;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     border-radius: 10px;
     width: 80%;
     padding: 5px;
     border-color: #000;
     border-width: 2px;
+    text-align: center;
+     transform: translate(-50%, -50%);
 
     
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 
 @font-face {
     font-family: 'title'; 
     src: url('fonts/karate.ttf') format('truetype');
   }
 
-#title h1 {   
+  main > #title h1 {   
         font-family: "Nanum Pen Script", cursive;
         font-weight: 400;
         font-style: normal;
-        font-size: 80px
-    ;
+        font-size: 80px;
+        
+
 }
 
 .container, .quiz-container {
