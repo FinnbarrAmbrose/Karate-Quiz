@@ -1,41 +1,42 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- document type -->
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-  <title>Karate Kata Quiz</title>
+  <meta charset="UTF-8"> <!-- UTF-8 for global text support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- scaling for smailler screen size-->
+  <link rel="stylesheet" href="/assets/css/style.css">  <!-- CSS stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- fonts Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+  <title>Karate Kata Quiz</title> <!-- Title of doc -->
 </head>
 
 <body>
   <main>
     <div id="title">
-      <h1>Karate Kata Quiz</h1>
+      <h1>Karate Kata Quiz</h1> <!-- Title of Quize -->
     </div>
 
     <section class="container" id="main-container">
       <label for="belt-select">Choose your belt:</label>
+      <!-- Dropdown for selecting belt -->
       <select id="belt-select">
-        <option value="" disabled selected>Select your belt</option>
-        <option value="white">White Belt</option>
-        <option value="yellow">Yellow Belt</option>
-        <option value="green">Green Belt</option>
-        <option value="blue">Blue Belt</option>
-        <option value="brown">Brown Belt</option>
-        <option value="black">Black Belt</option>
+        <option value="" disabled selected>Select your belt</option> <!-- Select belt prompt-->
+        <option value="white">White Belt</option>  <!-- option 1-->
+        <option value="yellow">Yellow Belt</option> <!-- option 2-->
+        <option value="green">Green Belt</option> <!-- option 3-->
+        <option value="blue">Blue Belt</option> <!-- option 4-->
+        <option value="brown">Brown Belt</option> <!-- option 5-->
+        <option value="black">Black Belt</option> <!-- option 6-->
       </select>
 
 
-      <button id="start-quiz">Start Quiz</button>
+      <button id="start-quiz">Start Quiz</button> <!-- Button for quiz to start -->
     </section>
 
     <div class="quiz-container" id="quiz-container" style="display: flexbox;">
-      <p id="question"></p>
-      <div id="options-container">
+      <p id="question"></p> <!-- quiz question box -->
+      <div id="options-container">   <!-- Quiz ansering options -->
 
         <label><input type="radio" name="option" value="A"> <span id="optionA">Option A</span></label><br>
         <label><input type="radio" name="option" value="B"> <span id="optionB">Option B</span></label><br>
@@ -43,13 +44,13 @@
         <label><input type="radio" name="option" value="D"> <span id="optionD">Option D</span></label><br>
       </div>
 
-      <button id="submit-button">Submit</button>
+      <button id="submit-button">Submit</button> <!-- Button for quiz to Submit -->
 
-      <button id="restart-quiz">Restart Quiz</button>
+      <button id="restart-quiz">Restart Quiz</button> <!-- Button for quiz to Restart -->
       <div id="result-container"></div>
   </main>
 
-  <footer> <!-- copied from my previous websites footer -->
+  <footer> <!-- copied from my previous websites footer (https://finnbarrambrose.github.io/project-1-/)-->
     <div class="footer-text" id="footer-text">
       <h3>Subscribe to Our Newsletter</h3>
       <form method="POST" action="https://formdump.codeinstitute.net/">
@@ -71,7 +72,7 @@
     </div>
   </footer>
 
-  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/script.js"></script> <!-- Link to JavaScript file -->
 </body>
 
 </html>
