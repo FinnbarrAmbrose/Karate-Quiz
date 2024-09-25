@@ -1,4 +1,4 @@
-# Project two:
+# Project two: Karate-Quiz
 
 ## Introduction
 This website is a multiple-choice karate quiz where the questions are based on the belt you either currently are or looking to grade to (next belt up) there are four questions in each belt level and the questions get progressively harder. thought I'd use it to improve my and others' karate knowledge
