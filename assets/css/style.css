@@ -45,9 +45,43 @@ body {
         font-weight: 400;
         font-style: normal;
         font-size: 80px;
-        
+}
+ 
+
+/* Styleing for all H features in Main */
+
+main > #main-container h2 { 
 
 }
+
+main > #main-container h3 { 
+    
+}
+main > #main-container h4 { 
+    
+}
+main > #start-quiz h2 { 
+    
+}
+main > #submit-button h2 { 
+    
+}
+main > #restart-quiz h2 { 
+    
+}
+main > #result-container { 
+    
+}
+
+/* Styleing for all H features in footer */
+footer > #footer-text h2{
+
+}
+footer > #footer-text h3{
+
+}
+
+
 /* Container with white background and rounded corners plus centered text */
 .container, .quiz-container {
     background-color: #fff;
@@ -102,7 +136,6 @@ footer {
 
 /* div inside the footer */
 footer div .footer-text #footer-text {
-    background-color: #6b1212;
     padding: 20px;
     text-align: center;
 }
