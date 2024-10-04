@@ -14,6 +14,12 @@ body {
         font-size: 20px;
       }
 
+     .alertMessage {
+color: red; 
+font-weight: bold; 
+margin-top: 10px;
+     }
+
 /* Title Large text, centered title, white background, thin black border */
 #title {
     background-color:#fff;
@@ -50,36 +56,6 @@ body {
 
 /* Styleing for all H features in Main */
 
-main > #main-container h2 { 
-
-}
-
-main > #main-container h3 { 
-    
-}
-main > #main-container h4 { 
-    
-}
-main > #start-quiz h2 { 
-    
-}
-main > #submit-button h2 { 
-    
-}
-main > #restart-quiz h2 { 
-    
-}
-main > #result-container { 
-    
-}
-
-/* Styleing for all H features in footer */
-footer > #footer-text h2{
-
-}
-footer > #footer-text h3{
-
-}
 
 
 /* Container with white background and rounded corners plus centered text */

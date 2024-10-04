@@ -183,6 +183,9 @@ function loadQuestion() {
     // Reset selectedAnswer
     selectedAnswer = "";
 
+     // Clear alert box
+    alertMessage.innerText = "";
+
     // Add event listeners to update selectedAnswer when the user selects an option
     document.querySelectorAll('input[name="option"]').forEach(option => {
         option.addEventListener('change', function () {
@@ -213,7 +216,7 @@ startQuizButton.addEventListener('click', function () {
 
     // Ensure a belt is selected
     if (!selectedBelt) {
-        alert('Please select a belt to start the quiz.');
+        alertMessage.innerText = 'Please select a belt to start the quiz.'; // Show alert message
         return;
     }
 
@@ -243,8 +246,9 @@ startQuizButton.addEventListener('click', function () {
 
 // Submit button event listener
 submitButton.addEventListener('click', function () {
+    // Check if the user has selected an answer
     if (!selectedAnswer) {
-        alert("Please select an answer!");
+        alertMessage.innerText = "Please select an answer!"; // Show message on the page
         return;
     }
     const correctAnswer = currentBeltQuestions[currentQuestionIndex].answer;
