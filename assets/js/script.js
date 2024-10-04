@@ -155,6 +155,7 @@ const optionsElement = document.getElementById('options-container');
 const submitButton = document.getElementById('submit-button');
 const resultContainer = document.getElementById('result-container');
 const timerElement = document.getElementById('timer');
+const alertMessage = document.getElementById('alertMessage');
 
 // Variables for quiz state management
 let currentQuestionIndex = 0;
@@ -246,6 +247,8 @@ startQuizButton.addEventListener('click', function () {
 
 // Submit button event listener
 submitButton.addEventListener('click', function () {
+
+    
     // Check if the user has selected an answer
     if (!selectedAnswer) {
         alertMessage.innerText = "Please select an answer!"; // Show message on the page

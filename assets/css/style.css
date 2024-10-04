@@ -14,18 +14,18 @@ body {
         font-size: 20px;
       }
 
-     .alertMessage {
-color: red; 
-font-weight: bold; 
-margin-top: 10px;
-     }
-
+      #alertMessage {
+        display: block; /*  */
+        margin-top: 10px; 
+        color: red; /* Color text */
+        font-weight: bold; /* text bold */
+      }
 /* Title Large text, centered title, white background, thin black border */
 #title {
     background-color:#fff;
     color: #000;
     margin-bottom: 20px;
-    display: flex;
+    display: block;
     justify-content:center;
     align-items: center;
     border-radius: 10px;
