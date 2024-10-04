@@ -37,6 +37,10 @@
 
     <div class="quiz-container" id="quiz-container" style="display: flexbox;"> <!-- If I remove flexbox and replace it with flex it messes up this site to an extended it can't really be used-->
      
+      <div id="timer-container">
+        <p>Time Remaining: <span id="timer">60</span> seconds</p> <!-- timer-->
+      </div>
+
       <p id="question"></p> <!-- quiz question box -->
       <div id="options-container"> <!-- Quiz ansering options -->
 
@@ -45,6 +49,7 @@
         <label><input type="radio" name="option" value="C"> <span id="optionC">Option C</span></label><br>
         <label><input type="radio" name="option" value="D"> <span id="optionD">Option D</span></label><br>
       </div>
+
 
       <button id="submit-button">Submit</button> <!-- Button for quiz to Submit -->
       <button id="restart-quiz"> Restart Quiz</button> <!-- Button for quiz to Restart -->

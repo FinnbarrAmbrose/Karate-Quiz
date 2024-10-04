@@ -143,7 +143,8 @@
             }
         ];
 
-        // Grab elements from the DOM
+
+// Grab elements from the DOM
 const startQuizButton = document.getElementById('start-quiz');
 const mainContainer = document.getElementById('main-container');
 const quizContainer = document.getElementById('quiz-container');
@@ -153,12 +154,15 @@ const questionElement = document.getElementById('question');
 const optionsElement = document.getElementById('options-container');
 const submitButton = document.getElementById('submit-button');
 const resultContainer = document.getElementById('result-container');
+const timerElement = document.getElementById('timer');
 
 // Variables for quiz state management
 let currentQuestionIndex = 0;
 let score = 0;
 let currentBeltQuestions = [];
 let selectedAnswer = "";
+let timeRemaining = 30; // Timer 30 seconds
+let timerInterval;
 
 // Function to load a question
 function loadQuestion() {
@@ -187,6 +191,22 @@ function loadQuestion() {
     });
 }
 
+// Function to start the timer
+function startTimer() {
+    timerElement.innerHTML = timeRemaining; // Initialize display
+    timerInterval = setInterval(function () {
+        timeRemaining--;
+        timerElement.innerHTML = timeRemaining;
+
+        // time hits zero, stop quiz
+        if (timeRemaining <= 0) {
+            clearInterval(timerInterval);
+            alert("Time's up!");
+            showResult(); //show result when time stops
+        }
+    }, 1000); // interval 1 second
+}
+
 // Start quiz event listener
 startQuizButton.addEventListener('click', function () {
     const selectedBelt = beltSelect.value;
@@ -197,23 +217,28 @@ startQuizButton.addEventListener('click', function () {
         return;
     }
 
-  // Set questions based on belt selection
-  if (selectedBelt === 'white') {
-    currentBeltQuestions = whiteBeltQuestions;
-} else if (selectedBelt === 'yellow') {
-    currentBeltQuestions = yellowBeltQuestions;
-} else if (selectedBelt === 'green') {
-    currentBeltQuestions = greenBeltQuestions;
-} else if (selectedBelt === 'blue') {
-    currentBeltQuestions = blueBeltQuestions;
-} else if (selectedBelt === 'brown') {
-    currentBeltQuestions = brownBeltQuestions;
-} else if (selectedBelt === 'black') {
-    currentBeltQuestions = blackBeltQuestions;
-}
+    // Set questions based on belt selection
+    if (selectedBelt === 'white') {
+        currentBeltQuestions = whiteBeltQuestions;
+    } else if (selectedBelt === 'yellow') {
+        currentBeltQuestions = yellowBeltQuestions;
+    } else if (selectedBelt === 'green') {
+        currentBeltQuestions = greenBeltQuestions;
+    } else if (selectedBelt === 'blue') {
+        currentBeltQuestions = blueBeltQuestions;
+    } else if (selectedBelt === 'brown') {
+        currentBeltQuestions = brownBeltQuestions;
+    } else if (selectedBelt === 'black') {
+        currentBeltQuestions = blackBeltQuestions;
+    }
+
     mainContainer.style.display = 'none'; // Hide main container
     quizContainer.style.display = 'block'; // Show quiz container
     loadQuestion();
+
+    // Start the timer
+    timeRemaining = 60; // reset timer
+    startTimer(); // start countdown
 });
 
 // Submit button event listener
@@ -231,11 +256,11 @@ submitButton.addEventListener('click', function () {
 
     currentQuestionIndex++;
 
-    // If there are more questions, load the next question
+    // load the next part
     if (currentQuestionIndex < currentBeltQuestions.length) {
         loadQuestion();
     } else {
-        // No more questions, show the result
+        //show the result
         showResult();
     }
 });
@@ -243,24 +268,24 @@ submitButton.addEventListener('click', function () {
 // Restart quiz event listener
 restartQuizButton.addEventListener('click', function () {
     resetQuiz();
-    mainContainer.style.display = 'block'; // Show main container
-    quizContainer.style.display = 'none'; // Hide quiz container
+    mainContainer.style.display = 'block'; // main container
+    quizContainer.style.display = 'none'; // hide quiz container
+    clearInterval(timerInterval); // stop timer
 });
-
 // Function to show the final score after the quiz
 function showResult() {
+    clearInterval(timerInterval); // stop the timer
     resultContainer.innerHTML = `<p>Quiz finished! Your score: ${score}/${currentBeltQuestions.length}</p>`;
-    submitButton.style.display = 'none'; // Hide submit button after quiz ends
-    restartQuizButton.style.display = 'inline-block'; // Show restart button
+    submitButton.style.display = 'none'; // submit button 
+    restartQuizButton.style.display = 'inline-block'; //restart button
 }
 
-// Function to reset the quiz to the initial state
+// function to reset the quiz to the initial state
 function resetQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     selectedAnswer = "";
-    submitButton.style.display = 'inline-block'; // Show submit button
-    resultContainer.innerText = ''; // Clear result text
-}
-
-         
+    submitButton.style.display = 'inline-block'; 
+    resultContainer.innerText = ''; 
+    timeRemaining = 60; 
+    }
