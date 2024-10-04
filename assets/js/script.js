@@ -240,7 +240,7 @@ startQuizButton.addEventListener('click', function () {
     loadQuestion();
 
     // Start the timer
-    timeRemaining = 60; // reset timer
+    timeRemaining = 30; // reset timer
     startTimer(); // start countdown
 });
 
@@ -291,5 +291,5 @@ function resetQuiz() {
     selectedAnswer = "";
     submitButton.style.display = 'inline-block'; 
     resultContainer.innerText = ''; 
-    timeRemaining = 60; 
+    timeRemaining = 30; 
     }
