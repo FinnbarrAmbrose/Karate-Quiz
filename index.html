@@ -35,11 +35,8 @@
       <button id="start-quiz">Start Quiz</button> <!-- Button for quiz to start -->
     </section>
 
-    <div class="quiz-container" id="quiz-container" style="display: flexbox;">
-      <!-- My HTML validation checker is saying that I should add a closing and 
-  element however when I do 4 checkboxes option A to D appear on front page 
-  before belt is even selected how do I add a closing date element without 
-  it showing these unwanted features -->
+    <div class="quiz-container" id="quiz-container" style="display: flexbox;"> <!-- If I remove flexbox and replace it with flex it messes up this site to an extended it can't really be used-->
+     
       <p id="question"></p> <!-- quiz question box -->
       <div id="options-container"> <!-- Quiz ansering options -->
 
@@ -50,7 +47,7 @@
       </div>
 
       <button id="submit-button">Submit</button> <!-- Button for quiz to Submit -->
-      <button id="restart-quiz"> Restart Quiz</button> <!-- Button for quiz to Restart -->
+      <button id="restart-quiz"> Quiz</button> <!-- Button for quiz to Restart -->
       <div id="result-container"></div>
   </main>
 
@@ -58,7 +55,7 @@
     <div class="footer-text" id="footer-text">
       <h2>Subscribe to Our Newsletter</h2>
       <form method="POST" action="https://formdump.codeinstitute.net/">
-        <input type="email" name="email" placeholder="Enter your email"> <!-- email sub for new letter list-->
+        <input type="email" name="email" placeholder="Enter your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> <!-- email sub for new letter list-->
         <input type="submit" value="Subscribe"> <!-- butten to sub the email addresss -->
       </form><!--can submit email but wount reconise a incompleat address need to fix-->
 
