@@ -156,6 +156,14 @@ const submitButton = document.getElementById('submit-button');
 const resultContainer = document.getElementById('result-container');
 const timerElement = document.getElementById('timer');
 const alertMessage = document.getElementById('alertMessage');
+const beltQuestions = {
+    white: whiteBeltQuestions,
+    yellow: yellowBeltQuestions,
+    green: greenBeltQuestions,
+    blue: blueBeltQuestions,
+    brown: brownBeltQuestions,
+    black: blackBeltQuestions
+};
 
 // Variables for quiz state management
 let currentQuestionIndex = 0;
@@ -223,19 +231,7 @@ startQuizButton.addEventListener('click', function () {
     }
 
     // Set questions based on belt selection
-    if (selectedBelt === 'white') {
-        currentBeltQuestions = whiteBeltQuestions;
-    } else if (selectedBelt === 'yellow') {
-        currentBeltQuestions = yellowBeltQuestions;
-    } else if (selectedBelt === 'green') {
-        currentBeltQuestions = greenBeltQuestions;
-    } else if (selectedBelt === 'blue') {
-        currentBeltQuestions = blueBeltQuestions;
-    } else if (selectedBelt === 'brown') {
-        currentBeltQuestions = brownBeltQuestions;
-    } else if (selectedBelt === 'black') {
-        currentBeltQuestions = blackBeltQuestions;
-    }
+    currentBeltQuestions = beltQuestions[selectedBelt] || [];
 
     mainContainer.style.display = 'none'; // Hide main container
     quizContainer.style.display = 'block'; // Show quiz container
