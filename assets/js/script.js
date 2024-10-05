@@ -205,7 +205,7 @@ function startTimer() {
         // time hits zero, stop quiz
         if (timeRemaining <= 0) {
             clearInterval(timerInterval);
-            alert("Time's up!");
+            alertMessage.innerText = "Too slow, don't be sorry, be better";
             showResult(); //show result when time stops
         }
     }, 1000); // interval 1 second
@@ -213,6 +213,7 @@ function startTimer() {
 
 // Start quiz event listener
 startQuizButton.addEventListener('click', function () {
+    alertMessage.innerText = "";
     const selectedBelt = beltSelect.value;
 
     // Ensure a belt is selected
@@ -247,6 +248,7 @@ startQuizButton.addEventListener('click', function () {
 
 // Submit button event listener
 submitButton.addEventListener('click', function () {
+    alertMessage.innerText = "";
 
     
     // Check if the user has selected an answer
@@ -274,6 +276,7 @@ submitButton.addEventListener('click', function () {
 
 // Restart quiz event listener
 restartQuizButton.addEventListener('click', function () {
+    alertMessage.innerText = "";
     resetQuiz();
     mainContainer.style.display = 'block'; // main container
     quizContainer.style.display = 'none'; // hide quiz container
