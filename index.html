@@ -96,38 +96,36 @@
     </main>
 
     <footer>
-      <!-- copied from my previous websites footer (https://finnbarrambrose.github.io/project-1-/)-->
       <div class="footer-text" id="footer-text">
-        <h2>Subscribe to Our Newsletter</h2>
-        <form method="POST" action="https://formdump.codeinstitute.net/">
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          />
-          <!-- email sub for new letter list-->
-          <input type="submit" value="Subscribe" />
-          <!-- butten to sub the email addresss -->
-        </form>
-        <!--can submit email but wount reconise a incompleat address need to fix-->
-
-        <span
-          >Contact us at:<a href="mailto:karate.quiz"
-            >Contact.Karate-Quiz@karate.quiz.com</a
-          ></span
-        >
-        <!-- email for uses to contact the wedsite-->
-
-        <span>
-          Follow us on<!-- social midia links that open with a diffrent tab-->
-          <a href="https://www.twitter.com" target="_blank">Twitter</a>
-          <a href="https://www.facebook.com" target="_blank">Facebook</a>
-          <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </span>
+          <h2>Subscribe to Our Newsletter</h2>
+          <form method="POST" action="https://formdump.codeinstitute.net/">
+              <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  class="email-input"
+              />
+              <input type="submit" value="Subscribe" class="subscribe-button"  />
+          </form>
+  
+          <!-- Contact section, centered horizontally -->
+          <div class="contact-section">
+              <span>Contact us at: 
+                  <a href="mailto:karate.quiz" class="contact-link">Contact.Karate-Quiz@karate.quiz.com</a>
+              </span>
+          </div>
+  
+          <!-- Social media section, stacked vertically and centered -->
+          <div class="social-section">
+              <span>Follow us on:</span>
+              <a href="https://www.twitter.com" target="_blank" class="social-link">Twitter</a>
+              <a href="https://www.facebook.com" target="_blank" class="social-link">Facebook</a>
+              <a href="https://www.instagram.com" target="_blank" class="social-link">Instagram</a>
+          </div>
       </div>
-    </footer>
+  </footer>
 
     <script src="assets/js/script.js" defer></script>
     <!-- Link to JavaScript file -->

@@ -24,12 +24,10 @@ body {
 
 #alertMessage {
     display: block;
-    /*  */
     margin-top: 10px;
     color: red;
-    /* Color text */
     font-weight: bold;
-    /* text bold */
+
 }
 
 /* Title Large text, centered title, white background, thin black border */
@@ -66,10 +64,6 @@ main>#title h1 {
 }
 
 
-/* Styleing for all H features in Main */
-
-
-
 /* Container with white background and rounded corners plus centered text */
 .container,
 .quiz-container {
@@ -104,7 +98,7 @@ label {
 /* Button styling */
 button {
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #000000;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -132,6 +126,73 @@ footer {
 
 /* div inside the footer */
 footer div .footer-text #footer-text {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
+
+/*  email input box */
+.email-input {
+    width: 350px;
+    padding: 5px;
+    font-size: 20px; 
+}
+
+/* Style footer links */
+.footer-text a {
+    font-size: 25px; 
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    color: #007BFF; /* Change color on hover */
+    text-decoration: underline;
+}
+
+/* Style the footer text */
+.footer-text {
+    font-size: 18px; 
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* style contact section */
+.contact-section {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 0px; 
+    font-size: 25px; 
+}
+
+/* social media links */
+.social-section {
+    flex-direction: row; 
+    align-items: center; 
+    font-size: 25px; 
+    margin-top: 5px; 
+}
+/* Style for social links */
+.social-section a {
+    margin-top: 5px;
+    text-decoration: none; /* Remove underline */
+}
+
+.social-section a:hover {
+    color: #007BFF; /* link color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.subscribe-button {
+    width: 100px; /* Match the width of the email input */
+    padding: 10px;
+    font-size: 18px; /* Match the font size of the email input */
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+    display: flexbox;
+    border: none;
+}
+
+h2 {
+    font-size: 40px;
+    }
