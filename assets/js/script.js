@@ -278,12 +278,20 @@ restartQuizButton.addEventListener('click', function () {
     quizContainer.style.display = 'none'; // hide quiz container
     clearInterval(timerInterval); // stop timer
 });
+
+
 // Function to show the final score after the quiz
 function showResult() {
-    clearInterval(timerInterval); // stop the timer
+    clearInterval(timerInterval); // Stop the timer
     resultContainer.innerHTML = `<p>Quiz finished! Your score: ${score}/${currentBeltQuestions.length}</p>`;
-    submitButton.style.display = 'none'; // submit button 
-    restartQuizButton.style.display = 'inline-block'; //restart button
+
+    // Hide question and options containers
+    questionElement.style.display = 'none';
+    optionsElement.style.display = 'none';
+
+    // Show restart button
+    submitButton.style.display = 'none'; // Hide submit 
+    restartQuizButton.style.display = 'inline-block'; // Show restart
 }
 
 // function to reset the quiz to the initial state
@@ -294,4 +302,7 @@ function resetQuiz() {
     submitButton.style.display = 'inline-block';
     resultContainer.innerText = '';
     timeRemaining = 30;
+    questionElement.style.display = 'block'; // Make question visible
+    optionsElement.style.display = 'block'; // Make options visible
+
 }
